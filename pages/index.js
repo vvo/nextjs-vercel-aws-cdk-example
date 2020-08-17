@@ -21,7 +21,7 @@ export default function Home() {
           });
         }}
       >
-        Generate PDF
+        Generate Pdf
       </button>
     </>
   );

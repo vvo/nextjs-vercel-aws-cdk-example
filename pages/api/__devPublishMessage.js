@@ -15,6 +15,6 @@ export default function __devPublishMessage(req, res) {
 
   const { topic: jobName, message: messageObject } = req.body;
   execJob(jobName, {
-    Records: [{ Sns: { Message: messageObject } }],
+    Records: [{ Sns: { Message: JSON.stringify(messageObject) } }],
   });
 }

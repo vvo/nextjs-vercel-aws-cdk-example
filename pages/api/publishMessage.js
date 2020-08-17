@@ -2,7 +2,7 @@
 
 import publishMessage from "lib/publishMessage";
 
-export default function publishMessageRoute(req, res) {
+export default async function publishMessageRoute(req, res) {
   // You would have to protect this route just like any other API route
   // so that no one can publish messages that are not tied to the data they own
 

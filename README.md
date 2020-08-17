@@ -57,6 +57,7 @@ By reading the [Procfile](./Procfile) This will start:
 
 ## Tips and docs
 
+- Once your database is deployed, you can get its endpoint and credentials via https://console.aws.amazon.com/rds/home and https://console.aws.amazon.com/secretsmanager/home
 - If your stack is in an unstable situation (cannot deploy or destroy), then go to https://console.aws.amazon.com/cloudformation and delete it manually.
 - CDK API: https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html
 - CDK guide: https://docs.aws.amazon.com/cdk/latest/guide/home.html
