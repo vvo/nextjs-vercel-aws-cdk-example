@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  db:
+    image: postgres:12.3-alpine
+    ports:
+      - "54320:5432"
+    environment:
+      POSTGRES_USER: example
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: example
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+    command: ["postgres", "-c", "log_statement=all"] # Log SQL queries to stdout

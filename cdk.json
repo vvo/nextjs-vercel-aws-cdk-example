@@ -1,0 +1,7 @@
+{
+  "app": "babel-node --presets @babel/preset-env infra/example-app.js",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "aws-cdk:enableDiffNoFail": "true"
+  }
+}

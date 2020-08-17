@@ -1,0 +1,32 @@
+{
+  "name": "cdk-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-ec2": "1.59.0",
+    "@aws-cdk/aws-events": "1.59.0",
+    "@aws-cdk/aws-events-targets": "1.59.0",
+    "@aws-cdk/aws-rds": "1.59.0",
+    "@aws-sdk/client-sns": "1.0.0-gamma.6",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@aws-cdk/aws-lambda": "1.59.0",
+    "@aws-cdk/aws-sns": "1.59.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.59.0",
+    "@aws-cdk/core": "1.59.0",
+    "@babel/node": "7.10.5",
+    "@babel/preset-env": "7.11.0",
+    "aws-cdk": "1.59.0",
+    "aws-lambda-nodejs-webpack": "1.2.5",
+    "babel-plugin-module-resolver": "4.0.0",
+    "tmp": "0.2.1"
+  }
+}
