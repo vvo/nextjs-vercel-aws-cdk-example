@@ -1,5 +1,5 @@
 {
-  "name": "cdk-example",
+  "name": "nextjs-vercel-aws-cdk-example",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "@aws-cdk/aws-events-targets": "1.59.0",
     "@aws-cdk/aws-rds": "1.59.0",
     "@aws-sdk/client-sns": "1.0.0-gamma.6",
+    "cron": "^1.8.2",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"

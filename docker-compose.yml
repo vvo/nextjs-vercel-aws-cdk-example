@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   db:
-    image: postgres:12.3-alpine
+    image: postgres:12.3-alpine # Be sure to always use the same version locally and on AWS
     ports:
       - "54320:5432"
     environment:

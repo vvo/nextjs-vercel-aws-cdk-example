@@ -251,7 +251,7 @@
     "@aws-cdk/custom-resources" "1.59.0"
     constructs "^3.0.2"
 
-"@aws-cdk/aws-ec2@1.59.0", "@aws-cdk/aws-ec2@^1.59.0":
+"@aws-cdk/aws-ec2@1.59.0":
   version "1.59.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-ec2/-/aws-ec2-1.59.0.tgz#3cb43015d2a7db3a17e23b9e2cb1805e48234775"
   integrity sha512-+jeY3Ju4QyJ60oroLSzWd9UNvJ3wBINwpVi8xKmAoxnkoKazIP9TUQO+e10t8fay7nZ4aZyceO0LauOIiqIipg==
@@ -361,7 +361,7 @@
     "@aws-cdk/region-info" "1.59.0"
     constructs "^3.0.2"
 
-"@aws-cdk/aws-events-targets@^1.59.0":
+"@aws-cdk/aws-events-targets@1.59.0":
   version "1.59.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-events-targets/-/aws-events-targets-1.59.0.tgz#6bac3c574bfec2fdfe11f977676eba6a03ec2ac1"
   integrity sha512-qH/F13qHyQvAMgIeAa7ZcvpvohulkcfbB2MSZqWL0TwFnQSRD4iaETDxj8/C/0wKkYIGDTArQKSEShZKiI58fA==
@@ -382,7 +382,7 @@
     "@aws-cdk/core" "1.59.0"
     constructs "^3.0.2"
 
-"@aws-cdk/aws-events@1.59.0", "@aws-cdk/aws-events@^1.59.0":
+"@aws-cdk/aws-events@1.59.0":
   version "1.59.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-events/-/aws-events-1.59.0.tgz#528c438f5d67c8b563b6f343c07ace715506a214"
   integrity sha512-WEgJgwcziiab1uIe2Ag7UODJPKnb/FkwyaLnm8IFBb/4Y6XL6tajmq+MKSmHARzUWnKZbAl3gV/Lioh+VM2udg==
@@ -450,7 +450,7 @@
     "@aws-cdk/core" "1.59.0"
     constructs "^3.0.2"
 
-"@aws-cdk/aws-rds@^1.59.0":
+"@aws-cdk/aws-rds@1.59.0":
   version "1.59.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-rds/-/aws-rds-1.59.0.tgz#07e7d7bf8180b4c9da522d40a8eb4f7bab227394"
   integrity sha512-Oz58zapxc/EtgWlWw5wkPC7piqCtKFHn4LnmlJdCIm6JIrkXOP+Fuedb36e38aEv74y68tr9iVZ8nEylOCFL7g==
@@ -719,7 +719,7 @@
     "@aws-sdk/types" "1.0.0-gamma.4"
     tslib "^1.8.0"
 
-"@aws-sdk/client-sns@^1.0.0-gamma.6":
+"@aws-sdk/client-sns@1.0.0-gamma.6":
   version "1.0.0-gamma.6"
   resolved "https://registry.yarnpkg.com/@aws-sdk/client-sns/-/client-sns-1.0.0-gamma.6.tgz#14851274f4ce5d1bf16f40937de94407dc9f97bd"
   integrity sha512-FNFsn7B2KkCBGz2hkN522brGcQzyQtxgdFeJjC8lspNy++N4/nrYVvJfHndU7E+i6PCpZ/rlkrbS1qjS0VyXPg==
@@ -3540,6 +3540,13 @@ create-hmac@^1.1.0, create-hmac@^1.1.4, create-hmac@^1.1.7:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
+cron@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/cron/-/cron-1.8.2.tgz#4ac5e3c55ba8c163d84f3407bde94632da8370ce"
+  integrity sha512-Gk2c4y6xKEO8FSAUTklqtfSr7oTq0CiPQeLBG5Fl0qoXpZyMcj1SG59YL+hqq04bu6/IuEA7lMkYDAplQNKkyg==
+  dependencies:
+    moment-timezone "^0.5.x"
+
 cross-fetch@3.0.5:
   version "3.0.5"
   resolved "https://registry.yarnpkg.com/cross-fetch/-/cross-fetch-3.0.5.tgz#2739d2981892e7ab488a7ad03b92df2816e03f4c"
@@ -5317,6 +5324,18 @@ mkdirp@^0.5.1, mkdirp@^0.5.3:
   dependencies:
     minimist "^1.2.5"
 
+moment-timezone@^0.5.x:
+  version "0.5.31"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.31.tgz#9c40d8c5026f0c7ab46eda3d63e49c155148de05"
+  integrity sha512-+GgHNg8xRhMXfEbv81iDtrVeTcWt0kWmTEY1XQK14dICTXnWJnT0dxdlPspwqF3keKMVPXwayEsk1DI0AA/jdA==
+  dependencies:
+    moment ">= 2.9.0"
+
+"moment@>= 2.9.0":
+  version "2.27.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.27.0.tgz#8bff4e3e26a236220dfe3e36de756b6ebaa0105d"
+  integrity sha512-al0MUK7cpIcglMv3YF13qSgdAIqxHTO7brRtaz3DlSULbqfazqkc5kEjNrLDOM7fsjshoFIihnU8snrP7zUvhQ==
+
 move-concurrently@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/move-concurrently/-/move-concurrently-1.0.1.tgz#be2c005fda32e0b29af1f05d7c4b33214c701f92"
@@ -6944,7 +6963,7 @@ timers-browserify@^2.0.4:
   dependencies:
     setimmediate "^1.0.4"
 
-tmp@^0.2.1:
+tmp@0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/tmp/-/tmp-0.2.1.tgz#8457fc3037dcf4719c251367a1af6500ee1ccf14"
   integrity sha512-76SUhtfqR2Ijn+xllcI5P1oyannHNHByD80W1q447gU3mp9G9PSpGdWmjUOHRDPiHYacIk66W7ubDTuPF3BEtQ==

@@ -119,6 +119,8 @@ Compute cost for a job that runs every minute, takes 2s
 - Store secrets in AWS and reuse them in Vercel
 - Single pipeline to deploy Vercel and AWS at every commit
 - Get AWS database url and secrets via API calls then store inside Vercel automatically
+- single place where CRONS are defined (dev/prod)
+- every pull request should have an isolated environment on AWS (database, topic, lambdas)
 
 # PS: Startup credits
 For credits:

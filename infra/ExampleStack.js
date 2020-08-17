@@ -22,24 +22,24 @@ export default class ExampleStack extends cdk.Stack {
     };
 
     const generatePdfLambda = new NodejsFunction(this, "generatePdfLambda", {
-      entry: "events/generatePdf.js",
+      entry: "jobs/generatePdf.js",
       handler: "generatePdf",
       ...defaultLambdaOptions,
     });
 
     const checkTwitterLambda = new NodejsFunction(this, "checkTwitterLambda", {
-      entry: "events/checkTwitter.js",
+      entry: "jobs/checkTwitter.js",
       handler: "checkTwitter",
       ...defaultLambdaOptions,
     });
 
-    // run events/checkTwitter.js every 5 minutes
+    // run jobs/checkTwitter.js every 5 minutes
     const rule = new events.Rule(this, "ScheduleRule", {
       schedule: events.Schedule.cron({ minute: "5" }),
     });
     rule.addTarget(new targets.LambdaFunction(checkTwitterLambda));
 
-    // run events/generatePdfTopic.js whenever a message is published on the associated topic
+    // run jobs/generatePdfTopic.js whenever a message is published on the associated topic
     const generatePdfTopic = new sns.Topic(this, "generatePdfTopic");
     generatePdfTopic.addSubscription(
       new subscriptions.LambdaSubscription(generatePdfLambda)
