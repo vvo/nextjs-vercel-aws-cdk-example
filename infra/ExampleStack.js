@@ -33,9 +33,9 @@ export default class ExampleStack extends cdk.Stack {
       ...defaultLambdaOptions,
     });
 
-    // run jobs/checkTwitter.js every 5 minutes
+    // run jobs/checkTwitter.js every 2 minutes
     const rule = new events.Rule(this, "ScheduleRule", {
-      schedule: events.Schedule.cron({ minute: "5" }),
+      schedule: events.Schedule.cron({ minute: "*/2" }),
     });
     rule.addTarget(new targets.LambdaFunction(checkTwitterLambda));
 
