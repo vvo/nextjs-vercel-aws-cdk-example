@@ -5,7 +5,7 @@ _Companion project of the article at https://..._
 This is a Next.js example coupled with AWS services to provide:
 - database ([RDS](https://aws.amazon.com/rds/))
 - cron jobs ([EventBridge](https://aws.amazon.com/eventbridge/) + [Lambda](https://aws.amazon.com/lambda/))
-- asynchronous jobs ([SNS](https://aws.amazon.com/sns/) + [Lambda](https://aws.amazon.com/lambda/))
+- background jobs ([SNS](https://aws.amazon.com/sns/) + [Lambda](https://aws.amazon.com/lambda/))
 
 The goal is to have Next.js being deployed on Vercel, with resources being deployed on AWS via [AWS Cloud Development Kit](https://aws.amazon.com/cdk/). The AWS stack is described and deployed via a single JavaScript file ([infra/ExampleStack.js](./infra/ExampleStack.js)) thanks to AWS CDK's infrastructure as code (IaC) features.
 
