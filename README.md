@@ -1,6 +1,6 @@
 # nextjs-vercel-aws-cdk-example
 
-_Companion project of the article at https://..._
+_Companion project of the article at https://dev.to/vvo/coding-the-jamstack-missing-parts-databases-crons-background-jobs-1bpj_
 
 This is a Next.js example coupled with AWS services to provide:
 - database ([RDS](https://aws.amazon.com/rds/))
