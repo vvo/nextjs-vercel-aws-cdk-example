@@ -1,4 +1,4 @@
-# nextjs-vercel-aws-cdk-example
+# nextjs-vercel-aws-cdk-example [![Mentioned in Awesome CDK](https://awesome.re/mentioned-badge.svg)](https://github.com/eladb/awesome-cdk)
 
 _Companion project of the article at https://dev.to/vvo/coding-the-jamstack-missing-parts-databases-crons-background-jobs-1bpj_
 
